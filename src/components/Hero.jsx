@@ -16,16 +16,25 @@ export default function Hero() {
       <div className="hero-orb hero-orb--gold" aria-hidden="true" />
 
       <div className="hero-content">
-        {/* Logo mark */}
+        {/* Logo mark — matches HIGP geometric diamond branding */}
         <motion.div
           className="hero-logo"
           initial={{ opacity: 0, scale: 0.7 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          aria-label="HIGP logo"
+          aria-label="HIGP Printing Services logo"
         >
-          <span className="hero-logo-h">H</span>
-          <span className="hero-logo-igp">IGP</span>
+          {/* Geometric diamond grid — inspired by actual HIGP logo */}
+          <svg className="hero-logo-svg" viewBox="0 0 60 60" aria-hidden="true">
+            <rect x="2"  y="2"  width="26" height="26" rx="3" fill="#ff3333" opacity="0.92"/>
+            <rect x="32" y="2"  width="26" height="26" rx="3" fill="#ffd700" opacity="0.92"/>
+            <rect x="2"  y="32" width="26" height="26" rx="3" fill="#00ccff" opacity="0.92"/>
+            <rect x="32" y="32" width="26" height="26" rx="3" fill="#33cc33" opacity="0.92"/>
+            <text x="30" y="34" textAnchor="middle" fontSize="13" fontWeight="900"
+              fontFamily="Orbitron,sans-serif" fill="#fff" letterSpacing="0.5">HIGP</text>
+            <text x="30" y="44" textAnchor="middle" fontSize="4.2" fontWeight="600"
+              fontFamily="Inter,sans-serif" fill="rgba(255,255,255,0.85)" letterSpacing="0.8">PRINTING SERVICES</text>
+          </svg>
         </motion.div>
 
         {/* Title */}
