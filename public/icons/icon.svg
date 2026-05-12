@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#050510"/>
+  <!-- Four colored quadrants matching HIGP logo -->
+  <rect x="16" y="16" width="228" height="228" rx="24" fill="#ff3333"/>
+  <rect x="268" y="16" width="228" height="228" rx="24" fill="#ffd700"/>
+  <rect x="16" y="268" width="228" height="228" rx="24" fill="#00ccff"/>
+  <rect x="268" y="268" width="228" height="228" rx="24" fill="#33cc33"/>
+  <!-- HIGP text overlay -->
+  <rect x="100" y="196" width="312" height="120" rx="12" fill="rgba(5,5,16,0.72)"/>
+  <text x="256" y="271" text-anchor="middle" font-family="Arial Black,Arial,sans-serif"
+    font-size="72" font-weight="900" fill="#ffffff" letter-spacing="2">HIGP</text>
+  <text x="256" y="300" text-anchor="middle" font-family="Arial,sans-serif"
+    font-size="22" font-weight="600" fill="rgba(255,255,255,0.85)" letter-spacing="3">PRINTING SERVICES</text>
+</svg>

@@ -1,0 +1,26 @@
+{
+  "name": "HIGP Printing Services",
+  "short_name": "HIGP Prints",
+  "description": "Affordable prints. Quality service. Mugs, tarpaulins, DTF, t-shirts, IDs and more.",
+  "start_url": "/HIGPwebsite/",
+  "scope": "/HIGPwebsite/",
+  "display": "standalone",
+  "background_color": "#050510",
+  "theme_color": "#ffd700",
+  "orientation": "portrait-primary",
+  "categories": ["business", "shopping"],
+  "icons": [
+    {
+      "src": "/HIGPwebsite/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/HIGPwebsite/icons/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

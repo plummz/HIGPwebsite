@@ -1,0 +1,85 @@
+/* Fixed pill — top-right corner, above all content, never blocking body */
+.install-pill {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: rgba(5, 5, 16, 0.88);
+  border: 1px solid rgba(255, 215, 0, 0.45);
+  border-radius: 999px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255,215,0,0.08);
+  overflow: hidden;
+}
+
+/* Install action button */
+.install-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 14px 9px 12px;
+  background: transparent;
+  border: none;
+  color: var(--gold, #ffd700);
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.install-btn:hover {
+  background: rgba(255, 215, 0, 0.1);
+  color: #fff;
+}
+
+.install-btn:active {
+  transform: scale(0.97);
+}
+
+/* Dismiss (×) button */
+.install-dismiss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  border-left: 1px solid rgba(255, 215, 0, 0.18);
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  flex-shrink: 0;
+}
+
+.install-dismiss:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Mobile: keep it tight and tap-friendly */
+@media (max-width: 480px) {
+  .install-pill {
+    top: 12px;
+    right: 12px;
+  }
+
+  .install-btn {
+    padding: 10px 12px 10px 11px;
+    font-size: 0.75rem;
+  }
+
+  .install-dismiss {
+    width: 36px;
+    height: 36px;
+  }
+}
