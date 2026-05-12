@@ -1,0 +1,102 @@
+.sd-root {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.sd-card {
+  width: 100%;
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border-color: var(--accent, var(--gold-border));
+  box-shadow: 0 0 30px var(--glow, transparent);
+  transition: box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+/* Header row */
+.sd-header {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.sd-icon {
+  font-size: 2.4rem;
+  flex-shrink: 0;
+  line-height: 1;
+  filter: drop-shadow(0 0 8px var(--accent));
+}
+
+.sd-title {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.3rem;
+  transition: color 0.35s;
+}
+
+.sd-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Divider */
+.sd-divider {
+  height: 1px;
+  opacity: 0.35;
+  border-radius: 1px;
+  transition: background-color 0.35s;
+}
+
+/* Pricing */
+.sd-pricing {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.sd-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.88rem;
+}
+
+.sd-price-label {
+  color: var(--text-secondary);
+}
+
+.sd-price-value {
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: color 0.35s;
+}
+
+/* Note */
+.sd-note {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* CTA button */
+.sd-btn {
+  margin-top: auto;
+  justify-content: center;
+  font-weight: 700;
+  box-shadow: 0 0 16px var(--glow, transparent);
+  transition: box-shadow 0.3s, transform 0.2s, opacity 0.3s;
+}
+
+.sd-btn:hover {
+  box-shadow: 0 0 28px var(--glow, transparent);
+  transform: translateY(-2px);
+}

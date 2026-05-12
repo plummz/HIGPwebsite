@@ -1,0 +1,87 @@
+.sw-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  width: 100%;
+}
+
+.sw-canvas-wrap {
+  width: 100%;
+  max-width: 340px;
+  position: relative;
+}
+
+.sw-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+
+/* Slice – cursor pointer + focus ring */
+.sw-slice-group {
+  cursor: pointer;
+  outline: none;
+}
+
+.sw-slice-group:focus-visible path {
+  stroke-width: 3 !important;
+  stroke: #fff !important;
+}
+
+/* Active service name */
+.sw-active-name {
+  font-family: var(--font-display);
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  min-height: 1.5em;
+}
+
+/* Navigation dots */
+.sw-dots {
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sw-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px solid;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.sw-dot:hover {
+  transform: scale(1.35);
+}
+
+.sw-dot--active {
+  transform: scale(1.25);
+}
+
+/* Keyboard hint */
+.sw-hint {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin: 0;
+}
+
+/* ── Mobile ──────────────────────────────────── */
+@media (max-width: 600px) {
+  .sw-canvas-wrap {
+    max-width: 290px;
+  }
+}

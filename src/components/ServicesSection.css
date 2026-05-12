@@ -1,0 +1,33 @@
+.ss-section {
+  background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-primary) 100%);
+}
+
+.ss-layout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.ss-wheel-col {
+  display: flex;
+  justify-content: center;
+}
+
+.ss-detail-col {
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Stack on mobile */
+@media (max-width: 768px) {
+  .ss-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ss-detail-col {
+    max-width: 100%;
+  }
+}
